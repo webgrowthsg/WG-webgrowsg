@@ -1,0 +1,237 @@
+/* ===== Hero (Homepage) ===== */
+.hero {
+  background: var(--ink);
+  color: var(--mist);
+  padding: var(--s-9) 0 var(--s-9);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(242, 193, 78, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: -200px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(42, 157, 143, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--s-7);
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  color: var(--white);
+  margin-bottom: var(--s-4);
+}
+.hero .lead {
+  color: var(--mist-2);
+  font-size: 1.25rem;
+  margin-bottom: var(--s-5);
+}
+.hero-offer {
+  font-size: 1.05rem;
+  color: var(--mist);
+  margin-bottom: var(--s-5);
+  padding: var(--s-4) var(--s-5);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(242, 193, 78, 0.2);
+  border-radius: var(--radius);
+}
+.hero-offer strong { color: var(--amber); }
+.hero-trust {
+  margin-top: var(--s-5);
+  font-size: 0.85rem;
+  color: var(--slate-2);
+  letter-spacing: 0.02em;
+}
+.hero-content .pill { margin-bottom: var(--s-4); }
+
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-visual { order: -1; min-height: 300px; }
+}
+@media (max-width: 640px) {
+  .hero { padding: var(--s-8) 0; }
+  .hero .lead { font-size: 1.1rem; }
+  .hero-offer { font-size: 0.95rem; }
+}
+
+/* ===== Service page hero ===== */
+.service-hero {
+  background: var(--ink);
+  color: var(--mist);
+  padding: var(--s-8) 0 var(--s-7);
+  position: relative;
+  overflow: hidden;
+}
+.service-hero h1 { color: var(--white); margin-bottom: var(--s-4); }
+.service-hero .lead { color: var(--mist-2); max-width: 640px; }
+.service-hero .breadcrumbs a { color: var(--slate-2); }
+.service-hero .breadcrumbs a:hover { color: var(--amber); }
+.service-hero .breadcrumbs [aria-current="page"] { color: var(--mist); }
+.service-hero .breadcrumbs .sep { color: var(--ink-3); }
+.service-hero .eyebrow { color: var(--amber); }
+.service-hero .btn-row { margin-top: var(--s-5); }
+
+.service-section {
+  padding: var(--s-8) 0;
+}
+.service-section-mist { background: var(--mist); }
+
+/* ===== Case study page ===== */
+.case-hero {
+  background: var(--ink);
+  color: var(--mist);
+  padding: var(--s-8) 0 var(--s-7);
+}
+.case-hero h1 { color: var(--white); }
+.case-hero .lead { color: var(--mist-2); }
+.case-hero .breadcrumbs a { color: var(--slate-2); }
+.case-hero .breadcrumbs a:hover { color: var(--amber); }
+.case-hero .breadcrumbs [aria-current="page"] { color: var(--mist); }
+.case-hero .breadcrumbs .sep { color: var(--ink-3); }
+.case-hero .eyebrow { color: var(--amber); }
+
+.case-section { padding: var(--s-8) 0; }
+.case-section-mist { background: var(--mist); }
+
+.ia-diagram {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--s-6);
+  margin: var(--s-5) 0;
+}
+.ia-tree { list-style: none; padding: 0; margin: 0; }
+.ia-tree li {
+  padding: var(--s-2) 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--line);
+}
+.ia-tree li:last-child { border-bottom: none; }
+.ia-tree .ia-parent { font-weight: 600; color: var(--ink); }
+.ia-tree .ia-child { padding-left: var(--s-5); color: var(--slate); font-weight: 400; }
+.ia-tree .ia-child::before {
+  content: "├ ";
+  color: var(--teal);
+  font-family: monospace;
+}
+.ia-tree .ia-child:last-child::before { content: "└ "; }
+
+/* ===== About page ===== */
+.principle {
+  display: flex;
+  gap: var(--s-4);
+  padding: var(--s-5) 0;
+  border-bottom: 1px solid var(--line);
+}
+.principle:last-child { border-bottom: none; }
+.principle-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--mist);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-2);
+}
+.principle-body h4 { margin-bottom: var(--s-1); }
+.principle-body p { color: var(--slate); font-size: 0.95rem; margin: 0; }
+
+/* ===== Pricing page ===== */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-5);
+  align-items: start;
+}
+@media (max-width: 760px) {
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+
+.pricing-faq { max-width: 760px; margin: 0 auto; }
+
+/* ===== SEO layers diagram ===== */
+.seo-layers {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  margin: var(--s-5) 0;
+}
+.seo-layer {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--s-5) var(--s-6);
+  display: flex;
+  align-items: center;
+  gap: var(--s-5);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.seo-layer:hover { transform: translateX(4px); box-shadow: var(--shadow-sm); }
+.seo-layer-num {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--amber);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.seo-layer-body h3 { margin-bottom: var(--s-1); font-size: 1.2rem; }
+.seo-layer-body p { color: var(--slate); font-size: 0.95rem; margin: 0; }
+
+/* ===== Local SEO map mock ===== */
+.local-mock {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--s-6);
+  text-align: center;
+}
+.local-mock .map-pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--coral);
+  color: var(--white);
+  margin-bottom: var(--s-4);
+}
+.local-mock h4 { margin-bottom: var(--s-2); }
+.local-mock p { color: var(--slate); font-size: 0.92rem; }
+
+/* ===== Section heading helper ===== */
+.section-heading {
+  text-align: center;
+  margin-bottom: var(--s-7);
+}
+.section-heading .eyebrow { display: block; }
+.section-heading h2 { margin-bottom: var(--s-3); }
+.section-heading .lead { color: var(--slate); max-width: 640px; margin: 0 auto; }
