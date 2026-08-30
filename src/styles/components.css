@@ -48,8 +48,8 @@
 .logo-text { line-height: 1; }
 .logo-sg { color: var(--amber-2); }
 
-.site-header.on-hero .logo { color: var(--white); }
-.site-header.on-hero .logo-mark { color: var(--white); }
+.site-header.on-hero .logo { color: var(--ink); }
+.site-header.on-hero .logo-mark { color: var(--ink); }
 
 .nav-desktop {
   display: flex;
@@ -78,8 +78,8 @@
   transition: color var(--dur) var(--ease), background var(--dur) var(--ease);
 }
 .nav-trigger:hover { color: var(--teal-2); background: var(--mist); }
-.site-header.on-hero .nav-trigger { color: var(--mist); }
-.site-header.on-hero .nav-trigger:hover { color: var(--white); }
+.site-header.on-hero .nav-trigger { color: var(--ink); }
+.site-header.on-hero .nav-trigger:hover { color: var(--teal-2); }
 
 .nav-link {
   display: block;
@@ -94,8 +94,8 @@
 }
 .nav-link:hover { color: var(--teal-2); background: var(--mist); }
 .nav-link.active { color: var(--teal-2); }
-.site-header.on-hero .nav-link { color: var(--mist); }
-.site-header.on-hero .nav-link:hover { color: var(--white); }
+.site-header.on-hero .nav-link { color: var(--ink); }
+.site-header.on-hero .nav-link:hover { color: var(--teal-2); }
 
 .dropdown-menu {
   position: absolute;
@@ -140,7 +140,7 @@
   border-radius: 2px;
   transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
 }
-.site-header.on-hero .menu-toggle span { background: var(--white); }
+.site-header.on-hero .menu-toggle span { background: var(--ink); }
 .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .menu-toggle.open span:nth-child(2) { opacity: 0; }
 .menu-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
