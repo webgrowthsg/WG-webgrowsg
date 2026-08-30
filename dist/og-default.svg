@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a1f33" />
+  <circle cx="600" cy="315" r="200" fill="none" stroke="#f2c14e" stroke-width="6" opacity="0.3" />
+  <circle cx="600" cy="315" r="120" fill="none" stroke="#f2c14e" stroke-width="4" opacity="0.5" />
+  <text x="600" y="280" text-anchor="middle" fill="#f2c14e" font-family="Georgia, serif" font-size="52" font-weight="700">WebGrow SG</text>
+  <text x="600" y="340" text-anchor="middle" fill="#eef3f7" font-family="Arial, sans-serif" font-size="28" font-weight="400">Websites Built to Be Found.</text>
+  <line x1="500" y1="500" x2="700" y2="500" stroke="#f2c14e" stroke-width="3" opacity="0.5" />
+</svg>
