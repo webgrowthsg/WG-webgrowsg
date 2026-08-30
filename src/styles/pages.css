@@ -160,11 +160,11 @@
 /* ===== Pricing page ===== */
 .pricing-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--s-5);
   align-items: start;
 }
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .pricing-grid { grid-template-columns: 1fr; }
 }
 

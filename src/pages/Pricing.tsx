@@ -52,7 +52,7 @@ export function Pricing() {
           <span className="eyebrow">Pricing</span>
           <h1>Simple pricing. No surprises.</h1>
           <p className="lead">
-            Two plans, one principle: you always know what's included and what costs extra. No hidden fees, no lock-in beyond the minimum commitment.
+            Three plans, one principle: you always know what's included and what costs extra. No hidden fees, no lock-in beyond the minimum commitment.
           </p>
         </div>
       </section>
@@ -60,6 +60,33 @@ export function Pricing() {
       <section className="service-section">
         <div className="container">
           <div className="pricing-grid">
+            {/* Basic Information plan */}
+            <div className="price-card">
+              <span className="price-label">Starter</span>
+              <div className="price-name">Information Website</div>
+              <div className="price-amount">
+                <span style={{ fontSize: "1.4rem", fontWeight: 500 }}>$0</span> upfront
+              </div>
+              <div className="price-note">
+                From <strong>S$XX/month</strong> &bull; Minimum commitment applies
+              </div>
+              <ul className="feature-list">
+                <FeatureItem>Professional informational website</FeatureItem>
+                <FeatureItem>Responsive, mobile-first design</FeatureItem>
+                <FeatureItem>Managed hosting</FeatureItem>
+                <FeatureItem>SSL certificate</FeatureItem>
+                <FeatureItem>Technical maintenance and updates</FeatureItem>
+                <FeatureItem>Domain management</FeatureItem>
+                <FeatureItem>Reasonable minor content updates</FeatureItem>
+              </ul>
+              <a href={WA.pricing} className="btn btn-ghost btn-lg" target="_blank" rel="noopener noreferrer" style={{ marginTop: "auto" }}>
+                Discuss Your Website
+              </a>
+              <p className="text-smaller muted text-center mt-4">
+                No SEO or Google ranking services included.
+              </p>
+            </div>
+
             {/* Website plan */}
             <div className="price-card featured">
               <span className="price-label">Website</span>
