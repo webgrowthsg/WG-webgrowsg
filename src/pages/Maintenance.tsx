@@ -9,8 +9,8 @@ export function Maintenance() {
   return (
     <>
       <Seo
-        title="Website Maintenance Singapore — Hosting, SSL, Backups & Care"
-        description="Ongoing website care for Singapore businesses. Managed hosting, SSL, backups, security updates, domain management and technical support — all included in one monthly fee."
+        title="Website Maintenance Singapore | Hosting, SSL, Backups & Care | WebGrow SG"
+        description="Professional website maintenance for Singapore businesses. Managed hosting, SSL certificates, backups, security updates, domain management and technical support — all included in one monthly fee."
         path="/website-maintenance/"
         jsonLd={[
           serviceJsonLd({
