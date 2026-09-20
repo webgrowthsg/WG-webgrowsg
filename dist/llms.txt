@@ -1,0 +1,27 @@
+# WebGrow SG
+
+> Professional websites for Singapore businesses — designed for customers and structured for Google. $0 upfront website build with hosting, maintenance and SEO foundation included.
+
+WebGrow SG is a web development and digital marketing agency based in Singapore. We build websites structured around individual customer search intent, with direct conversion paths and an SEO foundation included in every build.
+
+## Services
+
+- [Web Design Singapore](https://webgrowsg.com/web-design-singapore/): Custom web development, web applications and e-commerce solutions. Responsive design, fast performance, SEO-optimized, $0 upfront build.
+- [SEO Services](https://webgrowsg.com/seo/): Keyword research, page optimization, content improvements, internal linking and ongoing search visibility growth.
+- [Local SEO](https://webgrowsg.com/local-seo/): Google Business Profile optimization, local search visibility, service area pages and review strategy for businesses serving customers nearby.
+- [Website Maintenance](https://webgrowsg.com/website-maintenance/): Managed hosting, SSL certificates, backups, security updates, domain management and technical support in one monthly fee.
+- [Pricing](https://webgrowsg.com/pricing/): Transparent pricing — $0 upfront website build with hosting and maintenance included, plus ongoing SEO Growth plans.
+
+## Case Studies
+
+- [RedDot Emergency](https://webgrowsg.com/work/reddot-emergency/): Local lead generation website structured around individual customer problems, with direct WhatsApp conversion for urgent-need searches.
+- [Singapore Carpentry](https://webgrowsg.com/work/singapore-carpentry/): Multi-service SEO website with dedicated service pages supported by informational content addressing customer questions.
+- [Where Is The Next Spot](https://webgrowsg.com/work/where-is-the-next-spot/): Content and discovery website with information architecture designed around browsing, exploration and searchable content.
+
+## Company
+
+- [About](https://webgrowsg.com/about/): WebGrow SG is small by design — you communicate directly with the person responsible for your website, with no handoffs and no lock-in.
+
+## Optional
+
+- [Sitemap](https://webgrowsg.com/sitemap.xml): Full list of indexed pages.
