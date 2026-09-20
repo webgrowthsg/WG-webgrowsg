@@ -38,8 +38,8 @@ export function WebDesign() {
   return (
     <>
       <Seo
-        title="Web Design Singapore — SEO-Ready Websites for SMEs"
-        description="Professional web design for Singapore businesses. Mobile-first, SEO-ready websites structured around what your customers search for. $0 upfront build with hosting and maintenance included."
+        title="Web Development Services Singapore | Custom Website Development | WebGrow SG"
+        description="Professional web development services in Singapore. Custom websites, web applications, and e-commerce solutions. Responsive design, fast performance, SEO-optimized. $0 upfront build."
         path="/web-design-singapore/"
         jsonLd={[
           serviceJsonLd({
