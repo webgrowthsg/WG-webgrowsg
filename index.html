@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Preload critical images for performance -->
+    <link rel="preload" as="image" href="/images/hero-home.jpg" />
+    <link rel="preload" as="image" href="/images/og-image.jpg" />
+
     <!-- SEO Meta Tags -->
     <title>WebGrow SG - Web Development & Digital Marketing Agency Singapore</title>
     <meta name="description" content="WebGrow SG is a leading digital agency in Singapore specializing in web development, SEO, digital marketing, and brand strategy. Get your free consultation today.">
@@ -103,6 +107,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" defer></script>
   </body>
 </html>
