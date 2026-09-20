@@ -1,24 +1,21 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { viteSingleFile } from 'vite-plugin-single-file'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      "@": "/src",
-    },
-  },
-  ssgOptions: {
-    entry: "src/entry-server.tsx",
-    mock: true,
-    formatting: "none",
-    dirStyle: "nested",
-    rootContainerId: "root",
+  plugins: [react(), viteSingleFile()],
+  server: {
+    middlewareMode: true,
+    headers: {
+      'Cache-Control': 'public, max-age=31536000, immutable'
+    }
   },
   build: {
-    outDir: "dist",
-    cssMinify: true,
-    minify: "esbuild",
-    sourcemap: false,
-  },
-});
+    rollupOptions: {
+      output: {
+        manualChunks: undefined
+      }
+    }
+  }
+})
