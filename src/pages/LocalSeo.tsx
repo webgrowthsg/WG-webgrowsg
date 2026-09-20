@@ -9,8 +9,8 @@ export function LocalSeo() {
   return (
     <>
       <Seo
-        title="Local SEO Singapore — Get Found by Customers Near You"
-        description="Local SEO for Singapore businesses. Google Business Profile, local search visibility, service-area pages and review strategy — helping customers near you find and choose your business."
+        title="Local SEO Singapore | Get Found by Customers Near You | WebGrow SG"
+        description="Local SEO services for Singapore businesses. Google Business Profile optimization, local search visibility, service area pages and review strategy. Help customers near you find and choose your business."
         path="/local-seo/"
         jsonLd={[
           serviceJsonLd({
