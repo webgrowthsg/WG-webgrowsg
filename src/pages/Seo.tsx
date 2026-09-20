@@ -9,8 +9,8 @@ export function Seo() {
   return (
     <>
       <SeoMeta
-        title="SEO Services Singapore — Grow Your Google Visibility"
-        description="SEO for Singapore businesses. We build SEO-ready websites and then grow your visibility over time — keyword research, page optimisation, content, internal linking and ongoing improvement."
+        title="SEO Services Singapore | Grow Your Google Visibility | WebGrow SG"
+        description="Professional SEO services in Singapore. Keyword research, page optimization, content improvements, internal linking and ongoing search visibility growth. No guaranteed rankings, just honest results."
         path="/seo/"
         jsonLd={[
           serviceJsonLd({
