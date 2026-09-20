@@ -1,12 +1,24 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-    headers: {
-      'Cache-Control': 'public, max-age=31536000, immutable'
-    }
-  }
-})
+  resolve: {
+    alias: {
+      "@": "/src",
+    },
+  },
+  ssgOptions: {
+    entry: "src/entry-server.tsx",
+    mock: true,
+    formatting: "none",
+    dirStyle: "nested",
+    rootContainerId: "root",
+  },
+  build: {
+    outDir: "dist",
+    cssMinify: true,
+    minify: "esbuild",
+    sourcemap: false,
+  },
+});
